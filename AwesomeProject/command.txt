@@ -1,0 +1,31 @@
+// tailwind
+https://github.com/vadimdemedes/tailwind-rn
+npm run dev:tailwind
+
+
+//react-native-paper
+https://callstack.github.io/react-native-paper/getting-started.html
+
+// form bulider
+https://www.npmjs.com/package/react-native-paper-form-builder
+https://medium.com/@acatomas/create-a-react-native-fully-controlled-form-using-react-hook-form-react-native-paper-and-e34c9ec11e5f
+
+error: activity class {} does not exist.
+
+https://stackoverflow.com/questions/65927699/react-native-error-type-3-activity-class-does-not-exist
+
+cd android
+
+.\gradlew clean
+
+cd ..
+yarn  cache clean --force
+
+https://blog.csdn.net/qq_40259641/article/details/128611610
+
+
+// calendar
+https://github.com/wix/react-native-calendars
+
+react-native-config
+https://www.npmjs.com/package/react-native-config

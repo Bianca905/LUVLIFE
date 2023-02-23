@@ -1,0 +1,65 @@
+  {/* {goalItemArr.map(goalItem => ( */}
+        
+        <Pressable key={id}
+          android_ripple={{color: '#dddddd'}}
+          // onPress={props.onDeleteItem.bind(props.id)}
+          style={({pressed}) => pressed && styles.pressedItem}>
+          <View>
+          <IconButton
+                icon="delete-outline"
+                iconColor={'grey'}
+                size={28}
+                onPress={navigation.goBack}
+              />
+          </View>
+          <View style={styles.goalItem}>
+            <Text style={tw('text-2xl ml-4 mb-2')}>{title} </Text>
+            <List.Item
+              title={title}
+              description={description}
+              left={props => <List.Icon {...props} icon="folder" />}
+            />
+
+            <List.Item
+              title="Start date - End date:"
+              description={[startDate?.toString().slice(0,10),' - ', endDate?.toString().slice(0,10)]}
+              left={props => <List.Icon {...props} icon="calendar" />}
+            />
+
+            <List.Item
+              title="Start time - End time:"
+              description={[startTime,' - ',endTime]}
+              left={props => <List.Icon {...props} icon="clock" />}
+            />
+
+            <View style={tw('flex flex-row-reverse')}>
+              <IconButton
+                icon="delete-outline"
+                iconColor={'grey'}
+                size={28}
+                onPress={() => console.log('Pressed')}
+              />
+
+              <IconButton
+                icon="file-edit-outline"
+                iconColor={'grey'}
+                size={25}
+                onPress={() => console.log('Pressed')}
+                style={tw('')}
+              />
+              <View>
+              <IconButton
+                icon="clipboard-check"
+                iconColor={'grey'}
+                size={25}
+                onPress={() => console.log('Pressed')}
+                
+              />
+              {/* <Text style={tw('ml-2')}>Done?</Text> */}
+              </View>
+             
+              
+            </View>
+          </View>
+        </Pressable>
+      {/* ))} */}
