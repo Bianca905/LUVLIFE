@@ -33,18 +33,7 @@ export const signUpThunk = createAsyncThunk<
     console.log('check response', signUpResult);
     return signUpResult;
 
-    // const userInfo = await fetch(`http://${hostname}:${port}/users/profile`,{
-    //   method : "GET",
-    //   headers : {
-    //     "Content-Type" : "application/json",
-    //   },
-    //   body: JSON.stringify({
-    //     userId : 2
-    //   })
-
-    // })
-
-    // return userInfo
+    
   } catch (error) {
     return thunkAPI.rejectWithValue('User cannot post');
   }

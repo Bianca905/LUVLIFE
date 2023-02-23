@@ -45,7 +45,6 @@ function Home() {
    
       <ScrollView>
         <View style={styles.mainContainer}>
-          {/* <ImageBackground source={require('../assets/image/icon1.png')} resizeMode="cover"style={styles.image}></ImageBackground> */}
 
           <Image source={require('../assets/image/icon1.png')} style={styles.logo}/>
           

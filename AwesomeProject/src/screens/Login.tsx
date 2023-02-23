@@ -66,20 +66,7 @@ function Login(){
                    control={control}
                    setFocus={setFocus}
                    formConfigArray={[
-                    //  {
-                    //    type: 'text',
-                    //    name: 'username',
-                    //    rules: {
-                    //      required: {
-                    //        value: true,
-                    //        message: 'Username is required',
-                    //      },
-                    //    },
-                    //    textInputProps: {
-                    //      label: 'Username',
-                    //      left: <TextInput.Icon icon={'account'} />,
-                    //    },
-                    //  },
+                   
      
                      {
                        type: 'email',
@@ -147,21 +134,10 @@ function Login(){
 
 const styles = StyleSheet.create({
   mainContainer: {
-    // justifyContent: "center",
-    // alignItems: "center",
+   
     padding: 15,
   },
 
-  // input: {
-  //   borderWidth: 1,
-  //   borderColor: '#D9D9D9',
-  //   borderRadius: 5,
-  //   marginTop: 10,
-  //   height: 50,
-  // },
-
-  // button: {
-  //   marginTop: 40,
-  // },
+  
 });
 export default Login;

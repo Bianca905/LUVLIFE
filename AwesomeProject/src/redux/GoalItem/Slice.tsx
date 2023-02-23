@@ -6,15 +6,7 @@ import {useRootSelector} from '../store';
 
 const initGoalItemState: GoalItemState = {
   goalItems: [
-    // {
-    //   id: 1,
-    //   tittle: 'travel around the world',
-    //   description: 'Japan',
-    //   startDate:'2023-01-01',
-    //   endDate: '2023-02-02',
-    //   startTime: '11:25',
-    //   is_completed: false,
-    // },
+  
     
   ],
   inputfield: undefined,
@@ -63,11 +55,7 @@ const goalItemSlice = createSlice({
       state,
       action: PayloadAction<{startDate: string; endDate: string}>,
     ) => {
-      // const newDateRange = {
-      //   startDate: action.payload.startDate,
-      //   endDate: action.payload.endDate,
-      // };
-      // console.log('date range', newDateRange);
+     
       state.input_start_date = action.payload.startDate;
       state.input_end_date = action.payload.endDate;
     },

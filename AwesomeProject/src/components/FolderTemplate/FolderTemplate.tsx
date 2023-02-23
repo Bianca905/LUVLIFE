@@ -46,7 +46,7 @@ function FolderTemplate() {
                 </TouchableOpacity>
               }
             />
-            <List.Item title={<Text>Add something you wish to do</Text>} />
+            {/* <List.Item title={<Text>Add something you wish to do</Text>} /> */}
             <List.Item
               title={
                 <TouchableOpacity onPress={toggleRemainderFirstPart}>
